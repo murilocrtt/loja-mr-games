@@ -9,9 +9,9 @@ import { GuardGuard } from '../guard.guard';
 const restritoRoutes: Routes = [
     {
         path: 'restrito', component: RestritoComponent, children: [
-            { path: 'cadastro', component: CadastroProdutoComponent, canActivate: [GuardGuard] },
-            { path: 'lista', component: ListaProdutoComponent, canActivate: [GuardGuard] },
-            { path: 'editar/:id', component: AtualizaProdutoComponent, canActivate: [GuardGuard] }
+            { path: 'cadastro', component: CadastroProdutoComponent },
+            { path: 'lista', component: ListaProdutoComponent },
+            { path: 'editar/:id', component: AtualizaProdutoComponent }
         ]
     },
 
